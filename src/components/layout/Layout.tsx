@@ -44,7 +44,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row">
+    <div className="h-screen flex flex-col md:flex-row overflow-hidden">
       {/* Mobile header */}
       <header className="md:hidden sticky top-0 z-40 bg-white border-b border-sage-100 px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -65,11 +65,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
       {/* Sidebar */}
       <aside
         className={cn(
-          'fixed inset-y-0 left-0 z-50 w-72 bg-white border-r border-sage-100 flex flex-col transition-transform duration-300 md:translate-x-0 md:static md:z-auto',
+          'fixed inset-y-0 left-0 z-50 w-72 bg-white border-r border-sage-100 flex flex-col transition-transform duration-300 md:translate-x-0 md:sticky md:top-0 md:h-screen md:shrink-0 md:z-auto',
           mobileOpen ? 'translate-x-0' : '-translate-x-full',
         )}
       >
-        <div className="hidden md:flex items-center gap-3 p-6 border-b border-sage-100">
+        <div className="hidden md:flex shrink-0 items-center gap-3 p-6 border-b border-sage-100">
           <div className="w-10 h-10 rounded-xl bg-warm-500 flex items-center justify-center shadow-sm">
             <PawPrint className="w-6 h-6 text-white" />
           </div>
@@ -79,7 +79,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
 
-        <nav className="flex-1 p-4 space-y-1 overflow-y-auto">
+        <nav className="flex-1 min-h-0 p-4 space-y-1 overflow-y-auto">
           {navItems.map(({ to, label, icon: Icon }) => {
             const active = location.pathname === to || (to !== '/' && location.pathname.startsWith(to))
             return (
@@ -101,7 +101,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           })}
         </nav>
 
-        <div className="p-4 border-t border-sage-100 space-y-3">
+        <div className="shrink-0 p-4 border-t border-sage-100 space-y-3">
           <label className="text-xs font-semibold text-sage-500 uppercase tracking-wide">Signed in as</label>
           <Select value={currentUserId} onValueChange={handleUserChange}>
             <SelectTrigger>
@@ -136,7 +136,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="fixed inset-0 z-40 bg-black/30 md:hidden" onClick={() => setMobileOpen(false)} />
       )}
 
-      <main className="flex-1 overflow-y-auto">
+      <main className="flex-1 min-h-0 overflow-y-auto">
         <div className="max-w-7xl mx-auto p-4 md:p-8">{children}</div>
       </main>
     </div>
