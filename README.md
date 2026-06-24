@@ -1,4 +1,4 @@
-# PawsConnect
+# Paws
 
 A modern shelter management platform for animal adoption, volunteer care tracking, and shelter operations.
 
@@ -54,7 +54,7 @@ The mock API in `src/api/client.ts` mirrors REST patterns — swap for Firebase,
 
 ## Reset Data
 
-Clear browser localStorage key `pawsconnect-db` to reload seed data.
+Clear browser localStorage key `paws-db` to reload seed data.
 
 ## Project Structure
 

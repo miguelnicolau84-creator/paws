@@ -18,7 +18,7 @@ function LoadingScreen() {
         <div className="w-16 h-16 rounded-2xl bg-warm-500 flex items-center justify-center mx-auto mb-4 animate-pulse">
           <PawPrint className="w-8 h-8 text-white" />
         </div>
-        <p className="text-sage-600 font-medium">Loading PawsConnect...</p>
+        <p className="text-sage-600 font-medium">Loading Paws...</p>
       </div>
     </div>
   )

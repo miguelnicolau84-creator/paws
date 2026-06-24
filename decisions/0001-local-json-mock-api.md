@@ -6,7 +6,7 @@
 
 ## Context
 
-PawsConnect needs persistent application data (animals, volunteers, medications, activities, facilities, adoption inquiries) while the product is still being designed and built. A real backend is planned eventually, but standing one up now would slow iteration on UI, workflows, and the data model.
+Paws needs persistent application data (animals, volunteers, medications, activities, facilities, adoption inquiries) while the product is still being designed and built. A real backend is planned eventually, but standing one up now would slow iteration on UI, workflows, and the data model.
 
 We need:
 
@@ -21,7 +21,7 @@ Use a **local JSON database** persisted in **browser localStorage**, exposed thr
 Concretely:
 
 1. **Seed data** lives in `src/data/seed.ts` and defines the initial `Database` shape (animals, volunteers, medications, etc.).
-2. **Persistence** uses the `pawsconnect-db` localStorage key. A separate `pawsconnect-db-version` key invalidates stale data when the seed schema changes.
+2. **Persistence** uses the `paws-db` localStorage key. A separate `paws-db-version` key invalidates stale data when the seed schema changes.
 3. **The API client** (`api`) mirrors REST-style operations: async methods (`getAnimals`, `createAnimal`, `logActivity`, …), artificial latency (~150 ms) to simulate network calls, and `structuredClone` on reads to avoid accidental mutation of shared state.
 4. **UI and state** (`src/stores/appStore.ts`) call `api` only — they do not read or write localStorage directly.
 
@@ -45,5 +45,5 @@ When a real backend is introduced, replace the implementation inside `src/api/cl
 
 ### Neutral
 
-- Resetting to seed data is done by clearing the `pawsconnect-db` localStorage key (documented in the project README).
+- Resetting to seed data is done by clearing the `paws-db` localStorage key (documented in the project README).
 - `src/data/database.json` may exist as a reference export, but the runtime source of truth is `seed.ts` plus localStorage.

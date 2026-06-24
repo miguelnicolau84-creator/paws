@@ -9,7 +9,7 @@ import type {
 } from '@/types'
 import { seedDatabase } from '@/data/seed'
 
-const STORAGE_KEY = 'pawsconnect-db'
+const STORAGE_KEY = 'paws-db'
 const SEED_VERSION = '3'
 
 function loadDb(): Database {

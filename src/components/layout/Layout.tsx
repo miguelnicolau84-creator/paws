@@ -51,7 +51,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="w-9 h-9 rounded-xl bg-warm-500 flex items-center justify-center">
             <PawPrint className="w-5 h-5 text-white" />
           </div>
-          <span className="font-bold text-sage-900 text-lg">PawsConnect</span>
+          <span className="font-bold text-sage-900 text-lg">Paws</span>
         </div>
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -74,7 +74,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <PawPrint className="w-6 h-6 text-white" />
           </div>
           <div>
-            <h1 className="font-bold text-sage-900 text-xl">PawsConnect</h1>
+            <h1 className="font-bold text-sage-900 text-xl">Paws</h1>
             <p className="text-xs text-sage-500">Shelter Management</p>
           </div>
         </div>

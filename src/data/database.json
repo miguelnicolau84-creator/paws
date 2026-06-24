@@ -6,5 +6,5 @@
   "facilities": "15 facilities (kennels, cat rooms, outdoor areas)",
   "adoptionInquiries": "5 adoption inquiries",
   "badges": "5 gamification badges",
-  "_note": "This file documents the data model. The canonical seed is src/data/seed.ts which exports seedDatabase. To reset data, clear localStorage key 'pawsconnect-db'."
+  "_note": "This file documents the data model. The canonical seed is src/data/seed.ts which exports seedDatabase. To reset data, clear localStorage key 'paws-db'."
 }

@@ -47,7 +47,7 @@ export function VolunteersPage() {
     <div className="space-y-8">
       <div>
         <h1 className="text-3xl font-bold text-sage-900">Volunteer Hub</h1>
-        <p className="text-sage-600 mt-1">Celebrating the amazing people who make PawsConnect possible.</p>
+        <p className="text-sage-600 mt-1">Celebrating the amazing people who make Paws possible.</p>
       </div>
 
       {/* Leaderboard */}

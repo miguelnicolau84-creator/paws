@@ -1,6 +1,6 @@
 # Design Decisions
 
-This folder records significant design decisions made during the PawsConnect project. Each decision lives in its own markdown file so context, rationale, and trade-offs stay easy to find later.
+This folder records significant design decisions made during the Paws project. Each decision lives in its own markdown file so context, rationale, and trade-offs stay easy to find later.
 
 ## Adding a decision
 
