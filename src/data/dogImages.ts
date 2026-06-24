@@ -46,4 +46,11 @@ export const dogImages = {
     main: unsplash('photo-1537151608828-ea2b11777ee8'),
     gallery: [unsplash('photo-1537151608828-ea2b11777ee8', 400)],
   },
+  terrier: {
+    main: unsplash('photo-1583337130417-3346a1be7dee'),
+    gallery: [
+      unsplash('photo-1583337130417-3346a1be7dee', 400),
+      unsplash('photo-1535930891776-0c2dfb7fda1a', 400),
+    ],
+  },
 } as const
