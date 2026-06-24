@@ -1,0 +1,10 @@
+{
+  "animals": "See src/data/seed.ts for full typed seed data",
+  "volunteers": "8 volunteers with stats and badges",
+  "medications": "7 active medication schedules",
+  "activities": "25+ activity log entries",
+  "facilities": "15 facilities (kennels, cat rooms, outdoor areas)",
+  "adoptionInquiries": "5 adoption inquiries",
+  "badges": "5 gamification badges",
+  "_note": "This file documents the data model. The canonical seed is src/data/seed.ts which exports seedDatabase. To reset data, clear localStorage key 'pawsconnect-db'."
+}

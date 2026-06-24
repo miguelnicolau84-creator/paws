@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #fdf8f3;
+  --color-warm-50: #fef7f0;
+  --color-warm-100: #fdeee0;
+  --color-warm-200: #fad9bc;
+  --color-warm-300: #f5be8f;
+  --color-warm-400: #ef9a5c;
+  --color-warm-500: #e67e33;
+  --color-warm-600: #d4621f;
+  --color-warm-700: #b04a1a;
+  --color-warm-800: #8d3c1c;
+  --color-warm-900: #73331a;
+  --color-sage-50: #f4f7f4;
+  --color-sage-100: #e4ebe4;
+  --color-sage-200: #c9d7c9;
+  --color-sage-300: #a3b9a3;
+  --color-sage-400: #7a9a7a;
+  --color-sage-500: #5a7d5a;
+  --color-sage-600: #466446;
+  --color-sage-700: #395039;
+  --color-sage-800: #304130;
+  --color-sage-900: #283628;
+  --color-coral-400: #f4845f;
+  --color-coral-500: #ef6548;
+  --color-coral-600: #dc4a2e;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --radius-lg: 0.75rem;
+  --radius-md: 0.5rem;
+  --radius-sm: 0.375rem;
+}
+
+@layer base {
+  * {
+    @apply border-sage-200;
+  }
+  body {
+    @apply bg-cream text-sage-900 font-sans antialiased;
+    margin: 0;
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .card-shadow {
+    box-shadow: 0 1px 3px rgba(40, 54, 40, 0.06), 0 4px 12px rgba(40, 54, 40, 0.04);
+  }
+  .card-shadow-lg {
+    box-shadow: 0 4px 6px rgba(40, 54, 40, 0.05), 0 10px 24px rgba(40, 54, 40, 0.08);
+  }
+}
